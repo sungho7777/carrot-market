@@ -2,9 +2,9 @@ import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-300 py-20 px-10 grid gap-10 min-h-screen">
+    <div className="bg-slate-400 place-content-center py-20 px-20 grid gap-10 lg:grid-cols-2 xl:grid-cols-3 min-h-screen">
       
-      <div className="bg-white sm:bg-red-400 md:bg-teal-400 lg:bg-green-400 p-6 xl:bg-indigo-400 2xl:bg-purple-400 rounded-2xl shadow-xl">
+      <div className="bg-white flex flex-col justify-between sm:bg-red-400 md:bg-teal-400 lg:bg-green-400 p-6 xl:bg-indigo-400 2xl:bg-purple-400 rounded-2xl shadow-xl">
         <span className="font-semibold text-3xl">Seelct Item</span>
         <ul>
           {[1,2,3,4,5,6,7].map((i)=>(
@@ -26,7 +26,8 @@ const Home: NextPage = () => {
           <span className="font-semibold">$38</span>
         </div>
         <button className="
-            mt-5 bg-blue-500 text-white 
+            mt-5 portrait:bg-indigo-500 landscape:bg-teal-500
+            text-white 
             p-3 text-center rounded-xl 
             w-2/4 mx-auto 
             hover:bg-teal-500 hover:text-black 
@@ -35,7 +36,7 @@ const Home: NextPage = () => {
       </div>
 
       <div className="bg-white overflow-hidden rounded-3xl shadow-xl group">
-        <div className="bg-blue-500 p-6 pb-14">
+        <div className="bg-blue-500 p-6 pb-14 xl:pb-36">
           <span className="text-white text-2xl">Profile</span>
         </div>
         <div className="rounded-3xl p-6 bg-white relative -top-14">
@@ -57,7 +58,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className="bg-white p-10 rounded-2xl shadow-xl">
+      <div className="bg-white p-10 rounded-2xl shadow-xl lg:col-span-2 xl:col-span-1">
         <div className="flex mb-5 justify-between items-center">
           <span>⬅️</span>
           <div className="space-x-3">
