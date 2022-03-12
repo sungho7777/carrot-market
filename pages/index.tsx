@@ -4,13 +4,13 @@ const Home: NextPage = () => {
   return (
     <div className="bg-slate-400 place-content-center py-20 px-20 grid gap-10 lg:grid-cols-2 xl:grid-cols-3 min-h-screen">
       
-      <div className="bg-white flex flex-col justify-between sm:bg-red-400 md:bg-teal-400 lg:bg-green-400 p-6 xl:bg-indigo-400 2xl:bg-purple-400 rounded-2xl shadow-xl">
+      <div className="bg-white dark:bg-black dark:text-white flex flex-col justify-between sm:bg-red-400 md:bg-teal-400 lg:bg-green-400 p-6 xl:bg-indigo-400 2xl:bg-purple-400 rounded-2xl shadow-xl">
         <span className="font-semibold text-3xl">Seelct Item</span>
         <ul>
           {[1,2,3,4,5,6,7].map((i)=>(
             <div className="flex justify-between my-2 odd:bg-blue-50 even:bg-yellow-50">
-              <span className="text-gray-500">Grey Chair</span>
-              <span className="font-semibold">$19</span>
+              <span className="text-gray-500 dark:text-gray-500">Grey Chair</span>
+              <span className="font-semibold dark:text-gray-500">$19</span>
             </div>
           ))}
         </ul>
