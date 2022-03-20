@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
+import Layout from "../../components/layout";
 
 const Live: NextPage =() => {
     return (
-        <div className="py-10 divide-y-2">
+        <Layout title="라이브" hasTabBar>
+        <div className="divide-y-2">
             {[1,2,3,4,5].map((_, i)=>(
                 <div className="pt-4 px-4" key={i}>
                     <div className="w-full rounded-md shadow-sm bg-slate-300 aspect-video" />
@@ -26,6 +28,7 @@ const Live: NextPage =() => {
                 </svg>
             </button>
         </div>
+        </Layout>
     );
 };
 

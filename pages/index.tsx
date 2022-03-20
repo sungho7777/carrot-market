@@ -4,7 +4,7 @@ import Enter from './enter';
 
 const Home: NextPage = () => {
   return (
-    <Layout title="home" hasTabBar>
+    <Layout title="홈" hasTabBar>
       <div className="flex px-4 flex-col space-y-5 ">
         {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
           <div key={i} className="flex px-4 border-b pb-4 cursor-pointer justify-between">
