@@ -42,3 +42,21 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 3. Prisma가 이런 타입에 관한 정보를 알고 있으면 client를 생성해줄 수 있음. client를 이용하면 TS로 DB와 직접 상호작용 가능, 자동완성 제공.
 
 4. Prisma Studio : Visual Database Browser, DB를 위한 관리자 패널같은 것.
+
+
+## PlanetScale
+1. MySQL 호환 Serverless 데이터베이스 플랫폼
+  https://planetscale.com/
+
+2. Vitess
+  Vitess는 MySQL을 스케일링하기 위한 데이터베이스 클러스터링 시스템
+  인터넷에서 가장 큰 사이트를 호스팅하는 강력한 오픈 소스 기술입니다.
+  https://vitess.io/
+
+3. Vitess를 사용하는 이유
+  - 수평 스케일
+  - 고가용성 (Vitess의 기본 복제본 구성은 예기치 않은 이벤트가 발생할 때 기본에서 복제본으로 원활한 장애 조치를 허용합니다.)
+  - MySQL 호환
+  - 쿠버네티스 네이티브
+  - 구체화된 뷰
+  - 온라인 스키마 마이그레이션
